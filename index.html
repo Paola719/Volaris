@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volaris - Vuelos</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+  <nav class="navbar">
+
+    <div class="nav-left">
+      <div class="logo">
+        <span class="logo-text">volaris</span>
+        <span class="logo-icon">✦</span>
+      </div>
+    </div>
+
+    <div class="nav-center">
+      <a href="#" class="nav-link active">Vuelos</a>
+      <a href="#" class="nav-link">Vuelo+Hotel</a>
+      <a href="#" class="nav-link">Mi reserva</a>
+      <a href="#" class="nav-link">Estatus de vuelo</a>
+    </div>
+
+    <div class="nav-right">
+      <span class="language">Español / $ MXN ▼</span>
+      <a href="#" class="btn-register">Regístrate</a>
+      <a href="#" class="btn-login">Iniciar sesión</a>
+    </div>
+
+   
+    <div class="mobile-right">
+      <span class="user-icon">👤</span>
+
+     
+      <button class="menu-btn">☰</button>
+    </div>
+
+  </nav>
+
+  <div class="mobile-menu">
+    <a href="#">Guía de viaje</a>
+    <a href="#">altitude</a>
+    <a href="#">Nuestros destinos</a>
+    <a href="#">Promociones</a>
+    <a href="#">Privacidad</a>
+    <a href="#">Contacto</a>
+  </div>
+
+  <div class="secondary-nav desktop-only">
+    <a href="#">Guía de viaje</a>
+    <a href="#">altitude</a>
+    <a href="#">Nuestros destinos</a>
+    <a href="#">Promociones</a>
+    <a href="#">Privacidad</a>
+    <a href="#">Contacto</a>
+  </div>
+</header>
+
+
+
+
+    <main class="main-container">
+        <section class="search-section">
+            <div class="trip-type">
+                <button class="trip-btn active">Viaje redondo</button>
+                <button class="trip-btn">Viaje sencillo</button>
+            </div>
+
+            <form class="search-form">
+                <div class="form-row">
+                    <div class="form-group origin">
+                        <label>Origen</label>
+                        <input type="text" value="Cd. México (Tod..." readonly>
+                    </div>
+                    <button class="swap-btn">⇄</button>
+                    <div class="form-group destination">
+                        <label>Selecciona un destino</label>
+                        <input type="text" placeholder="- - -">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Salida</label>
+                        <input type="text" value="Lun, 3 nov, 2025" readonly>
+                    </div>
+                    <div class="form-group">
+                        <label>Regreso</label>
+                        <input type="text" value="Jue, 6 nov, 2025" readonly>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Pasajeros</label>
+                        <select>
+                            <option>1 Adulto</option>
+                            <option>2 Adultos</option>
+                            <option>3 Adultos</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>¿Tienes un código de promoción? (Opcional)</label>
+                        <input type="text" placeholder="">
+                    </div>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="button" class="btn-secondary">Vuelo + Hotel 🏨</button>
+                    <button type="submit" class="btn-primary">Buscar vuelos ✈️</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="promo-section">
+            <div class="promo-card">
+                <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=800&h=600&fit=crop" alt="Promoción navidad">
+                <div class="promo-content">
+                    <h2>PREPÁRATE<br>PARA VIAJAR<br>EN INVIERNO</h2>
+                    <p>Vuelos nacionales desde</p>
+                    <p class="price-large">$99<span class="currency">MXN</span></p>
+                    <p class="price-note">*</p>
+                    <p>Vuelos internacionales desde</p>
+                    <p class="price-large">$179<span class="currency">USD</span></p>
+                    <button class="btn-promo">¡Reserva ahora, paga la TUA después!</button>
+                    <p class="travel-dates">Compra: Desde hoy hasta el 3-nov-2025<br>Viaja: Desde el 1-nov-2025 hasta el 31-ene-2026</p>
+                    <p class="promo-label">PRECIOS <strong>BAJOS</strong><br>Y MUY BAJOS</p>
+                    <a href="#" class="terms">*Términos y Condiciones</a>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn">❮</button>
+                    <button class="carousel-btn">❯</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="payment-section">
+            <h2 class="payment-title">Pago seguro</h2>
+            <div class="payment-card">
+                <div class="payment-methods">
+                    <h3>Tarjeta de crédito, tarjeta de débito y pago electrónico</h3>
+                    <div class="payment-logos">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" alt="Visa">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo.svg" alt="American Express">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Invex_logo.svg/320px-Invex_logo.svg.png" alt="Invex">
+                    </div>
+                    <a href="#" class="more-info">Ver más información</a>
+                </div>
+                <div class="payment-stores">
+                    <h3>Efectivo en cualquiera de las sucursales participantes</h3>
+                    <div class="store-logos">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Oxxo_Logo.svg" alt="OXXO">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/7-eleven_logo.svg" alt="7-Eleven">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Walmart_logo.svg" alt="Walmart">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Farmacias_del_Ahorro_logo.svg/320px-Farmacias_del_Ahorro_logo.svg.png" alt="Farmacias del Ahorro">
+                    </div>
+                </div>
+            </div>
+        </section>
+   
+        <section class="programs-section">
+            <div class="program-card">
+                <div class="program-icon">
+                    <img src="https://via.placeholder.com/150/8B3A8B/FFFFFF?text=altitude" alt="altitude">
+                </div>
+                <h3 class="program-title">altitude</h3>
+                <p class="program-description">Ahora puedes acumular puntos por todas tus compras. ¡Vuela y llega más alto!</p>
+                <button class="program-btn">Inscríbete ahora</button>
+            </div>
+
+            <div class="program-card">
+                <div class="program-icon">
+                    <img src="https://via.placeholder.com/150/8B3A8B/FFFFFF?text=Pase" alt="Pase Anual">
+                </div>
+                <h3 class="program-title">Pase Anual</h3>
+                <p class="program-description">Vuela todo lo que puedas por un año.</p>
+                <button class="program-btn">Inscríbete ahora</button>
+            </div>
+
+            <div class="program-card">
+                <div class="program-icon">
+                    <img src="https://via.placeholder.com/150/8B3A8B/FFFFFF?text=v.pass" alt="v.pass">
+                </div>
+                <h3 class="program-title">v.pass</h3>
+                <p class="program-description">Un viaje te espera cada mes. v.pass, tu suscripción de vuelos.</p>
+                <button class="program-btn">Suscríbete ahora</button>
+            </div>
+
+            <div class="program-card">
+                <div class="program-icon">
+                    <img src="https://via.placeholder.com/150/8B3A8B/FFFFFF?text=INVEX" alt="INVEX">
+                </div>
+                <h3 class="program-title">INVEX</h3>
+                <p class="program-description">Acumula pesos para comprar tus vuelos, ¡no millas ni puntos! Además, obtén equipaje gratis y meses sin intereses.</p>
+                <button class="program-btn">Solicita tu tarjeta</button>
+            </div>
+        </section>
+
+        <section class="services-section">
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2331/2331966.png" alt="Vuelo + Hotel">
+                </div>
+                <h3 class="service-title">Vuelo + Hotel</h3>
+                <p class="service-description">Encuentra las mejores ofertas para tu viaje.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1170/1170577.png" alt="v.business">
+                </div>
+                <h3 class="service-title">v.business</h3>
+                <p class="service-description">La membresía con beneficios especiales para tus viajes de negocios.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/681/681494.png" alt="Grupos">
+                </div>
+                <h3 class="service-title">Grupos</h3>
+                <p class="service-description">Obtén una cotización para grupos de más de 9 personas.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2972/2972185.png" alt="Beneficios AIFA">
+                </div>
+                <h3 class="service-title">Beneficios AIFA</h3>
+                <p class="service-description">Obtén un precio preferencial en las casetas de la autopista al viajar desde o hacia el aeropuerto Felipe Ángeles.</p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3774/3774299.png" alt="Carga">
+                </div>
+                <h3 class="service-title">Carga</h3>
+                <p class="service-description">Contamos con servicio de carga y mensajería.</p>
+            </div>
+        </section>
+
+    </main>
+<footer class="footer">
+
+    <div class="newsletter">
+        <div class="newsletter-content">
+            <p class="newsletter-text">Sé el primero en enterarte de nuestras</p>
+            <h2 class="newsletter-title">Promociones</h2>
+        </div>
+
+        <form class="newsletter-form">
+            <input type="email" placeholder="Correo Electrónico" class="newsletter-input">
+            <button type="submit" class="newsletter-btn">¡Suscribirme!</button>
+        </form>
+    </div>
+
+    <div class="footer-content">
+        
+        <div class="footer-column">
+            <h3 class="footer-heading"data-accordion>Nuestras rutas</h3>
+            <ul class="footer-list">
+                <li><a href="#">Vuelos a Aguascalientes</a></li>
+                <li><a href="#">Vuelos a Cancún</a></li>
+                <li><a href="#">Vuelos a Guatemala</a></li>
+                <li><a href="#">Vuelos a Culiacán</a></li>
+                <li><a href="#">Vuelos a Guadalajara</a></li>
+                <li><a href="#">Vuelos a León</a></li>
+                <li><a href="#">Vuelos a Ciudad de México</a></li>
+                <li><a href="#">Vuelos a Morelia</a></li>
+                <li><a href="#">Vuelos a Tijuana</a></li>
+                <li><a href="#">Vuelos a Uruapan</a></li>
+                <li><a href="#">Vuelos a Costa Rica</a></li>
+                <li><a href="#">Vuelos a Los Ángeles</a></li>
+                <li><a href="#">Vuelos a Chicago</a></li>
+            </ul>
+            <a href="#" class="footer-link-more">Ver todas las rutas</a>
+        </div>
+
+        <div class="footer-column">
+            <h3 class="footer-heading"data-accordion>Información para tu viaje y derechos</h3>
+            <ul class="footer-list">
+                <li><a href="#">FlexiTicket</a></li>
+                <li><a href="#">Tarjetas Volaris INVEX</a></li>
+                <li><a href="#">Derechos del pasajero</a></li>
+                <li><a href="#">Equipaje</a></li>
+                <li><a href="#">Pase de abordar</a></li>
+                <li><a href="#">Cambio de vuelo</a></li>
+                <li><a href="#">altitude</a></li>
+                <li><a href="#">v.club</a></li>
+                <li><a href="#">v.business</a></li>
+                <li><a href="#">Suscripciones</a></li>
+                <li><a href="#">Documentos de viaje</a></li>
+                <li><a href="#">Viajes con bebés</a></li>
+                <li><a href="#">Pagos diferidos</a></li>
+                <li><a href="#">Voucher electrónico</a></li>
+                <li><a href="#">Servicios Adicionales</a></li>
+                <li><a href="#">Cancelar reservación</a></li>
+                <li><a href="#">TUA</a></li>
+                <li><a href="#">Bogotá</a></li>
+                <li><a href="#">Colombia</a></li>
+                <li><a href="#">Facturación</a></li>
+                <li><a href="#">Pase anual</a></li>
+            </ul>
+            <a href="#" class="footer-link-more">Ver todo</a>
+        </div>
+
+        <div class="footer-column">
+            <h3 class="footer-heading" data-accordion>Sobre Volaris</h3>
+            <ul class="footer-list">
+                <li><a href="#">Acerca de nosotros</a></li>
+                <li><a href="#">Trabaja con nosotros</a></li>
+                <li><a href="#">Relación con inversionistas</a></li>
+                <li><a href="#">Sostenibilidad</a></li>
+                <li><a href="#">Sala de prensa</a></li>
+                <li><a href="#">Blog Volaris</a></li>
+                <li><a href="#">Revista</a></li>
+                <li><a href="#">Mapa del sitio</a></li>
+            </ul>
+            <a href="#" class="footer-link-more">Más sobre Volaris</a>
+        </div>
+
+        <div class="footer-column">
+            <h3 class="footer-heading">Descarga nuestra aplicación</h3>
+
+            <div class="app-buttons">
+                <a href="#" class="app-btn">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play">
+                </a>
+                <a href="#" class="app-btn">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Download_on_the_App_Store_Badge.svg" alt="App Store">
+                </a>
+            </div>
+
+            <h3 class="footer-heading social-heading">Síguenos</h3>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook"></a>
+                <a href="#" class="social-icon"><img src="https://cdn-icons-png.flaticon.com/512/5969/5969020.png" alt="X"></a>
+                <a href="#" class="social-icon"><img src="https://cdn-icons-png.flaticon.com/512/174/174855.png" alt="Instagram"></a>
+                <a href="#" class="social-icon"><img src="https://cdn-icons-png.flaticon.com/512/3046/3046121.png" alt="TikTok"></a>
+                <a href="#" class="social-icon"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
+                <a href="#" class="social-icon"><img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p class="copyright">© 2025 Volaris – Todos los derechos reservados</p>
+        <div class="footer-legal">
+            <a href="#">Términos y condiciones</a>
+            <a href="#">Aviso de privacidad</a>
+            <a href="#">Información legal</a>
+        </div>
+    </div>
+
+</footer>
+
+
+</body>
+</html>
